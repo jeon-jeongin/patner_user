@@ -92,14 +92,14 @@
                             결과 선택 입력방식
                         </p>
                         <div class="btnGroup">
-                            <button>버튼선택</button>
-                            <button>숫자입력</button>
-                            <button>사진만 게시</button>
+                            <button id="btn1">버튼선택</button>
+                            <button id="btn2">숫자입력</button>
+                            <button id="btn3">사진만 게시</button>
                         </div>
                         <p class="subMenu">복수선택 여부</p>
                         <div class="btnGroup">
-                            <button>복수 선택 가능</button>
-                            <button>복수 선택 불가능</button>
+                            <button id="btn1">복수 선택 가능</button>
+                            <button id="btn2">복수 선택 불가능</button>
                         </div>
                     </div>
                     <div class="rBox">
@@ -124,26 +124,32 @@
                     <p class="rSubTitle">
                         결과 선택 항목 입력
                     </p>
-                    <button>+ 추가</button>
+                    <button type="button" class="addBtn">+ 추가</button>
                     <table>
-                        <th>순서</th>
-                        <th>옵션명</th>
-                        <th>최소치</th>
-                        <th>최대치</th>
-                        <th>상태</th>
-                        <th>코멘트</th>
-                        <th></th>
+                        <th class="tHead">순서</th>
+                        <th class="tHead">옵션명</th>
+                        <th class="tHead">최소치</th>
+                        <th class="tHead">최대치</th>
+                        <th class="tHead">상태</th>
+                        <th class="tHead">코멘트</th>
+                        <th class="tHead"></th>
                         <tr>
-                            <td>1</td>
-                            <td>정상 (80 ~ 150mmhg)</td>
-                            <td>37.9</td>
-                            <td>150</td>
-                            <td><button>정상</button></td>
-                            <td><input type="text"></td>
-                            <td><button>삭제</button></td>
+                            <td class="tRow">1</td>
+                            <td class="tRow">정상 (80 ~ 150mmhg)</td>
+                            <td class="tRow">37.9</td>
+                            <td class="tRow">150</td>
+                            <td class="tRow">
+                                <button type="button" class="statusBtn">정상</button>
+                            </td>
+                            <td class="tRow">
+                                <input type="text">
+                            </td>
+                            <td class="tRow">
+                                <button type="button" class="deleteBtn">X</button>
+                            </td>
                         </tr>
                     </table>
-                    <button>저장하기</button>
+                    <button type="button" class="saveBtn">저장하기</button>
                 </div>
             </article>
         </section>

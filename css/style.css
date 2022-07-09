@@ -18,7 +18,7 @@
 
 /* 왼쪽 메뉴 탭 */
 .lContainer {
-    width: 25%;
+    width: 20%;
     background-color: #fff;
 }
 .underLine {
@@ -57,9 +57,170 @@
     padding: 0.5rem 1.2rem;
 }
 
+.selectBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectBtn select{
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f0f0;
+    margin: 1.2rem;
+}
+
 /* 오른쪽 내용*/
 .rContainer {
     width: 75%;
-    margin-left: 10rem;
+    margin-left: 2rem;
+}
+
+.backBtn {
     background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 0.7rem 2rem;
+    margin: 0 0.5rem;
+    color: #8f8e8f;
+}
+
+.rTitle {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 2rem 0.5rem 0 0.5rem;
+}
+
+.rLargeBox {
+    background-color: #fff;
+    margin: 0.8rem 0.5rem;
+}
+
+.rSubTitle {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1.2rem;
+}
+
+.rBoxs {
+    display: flex;
+    width: 100%;
+}
+
+.rBox {
+    background-color: #fff;
+    margin: 0.8rem 0.5rem;
+    width: 50%;
+}
+
+.selectMenu {
+    display: flex;
+    margin: 1.2rem 0;
+}
+
+.selectMenu label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 0 0.5rem 1.2rem;
+    width: 25%;
+}
+
+.selectMenu select, .selectInput{
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    color: #c5c5c5;
+    width: 75%;
+}
+
+.radioVal {
+    font-size: 10px;
+    color: #333;
+    padding: 0.5rem 0.2rem;
+}
+/* 복수 선택 버튼 */
+.btnGroup {
+    margin: 0.5rem 1.2rem 1rem 1.2rem;
+    text-align: center;
+}
+
+#btn1 {
+    margin-right: -3px;
+    border: 1px solid #dcdcdc;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+}
+
+#btn2 {
+    margin-left: -3px;
+    border: 1px solid #dcdcdc;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+}
+
+#btn3 {
+    margin-left: -5px;
+    border: 1px solid #dcdcdc;
+    background-color: inherit;
+    padding: 0.5rem 1rem;
+}
+
+/* 결과 선택 항목 입력 */
+.addBtn {
+    color: #13c4fb;
+    border: 1px solid #13c4fb;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background-color: inherit;
+    float: right;
+    margin-right: 1.2rem;
+}
+
+.rLargeBox table {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 1px solid #eeeeee;
+}
+
+.tHead{
+    padding: 1.2rem;
+    border-right: 1px solid #eeeeee;
+    background-color: #fafafa;
+}
+
+.tRow{
+    padding: 1.2rem;
+}
+
+.tRow input{
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 100%;
+    color: #c5c5c5;
+}
+
+.statusBtn {
+    border: none;
+    background-color: #8ef19c;
+    border-radius: 10px;
+    padding: 0.1rem 0.5rem;
+}
+
+.deleteBtn {
+    background-color: inherit;
+    border: none;
+}
+
+.saveBtn {
+    background-color: #b3b3b3;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    float: right;
+    margin-right: 1.2rem;
 }
