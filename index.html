@@ -18,9 +18,12 @@
                 </div>
                 <div class="underLine">
                     <img class="user_avatar"/>
-                    <p class="lTitle">
-                       양지동물병원
-                    </p>
+                    <div class="selectBtn">
+                        <p class="lTitle">
+                            양지동물병원
+                         </p>
+                         <select></select>
+                    </div>
                 </div>
                 <div class="lMenu">
                     <p class="subTitle">
@@ -33,22 +36,117 @@
                 </div>
             </article>
             <article class="rContainer">
-                <div>
-    
-                </div>
-                <div>
-                    <div>
-                    
+                <button type="button" class="backBtn">뒤로 돌아가기</button>
+                <p class="rTitle">
+                    검진항목 수정
+                </p>
+                <div class="rLargeBox">
+                    <div class="underLine">
+                        <p class="rSubTitle">
+                            기본 정보
+                        </p>
                     </div>
-                    <div>
-                        
+                    <div class="rBoxs">
+                        <div class="rBox">
+                            <div class="selectMenu">
+                                <label for="pet-select">검진영역</label>
+                                <select>
+                                    <option value="1">신체검사2</option>
+                                    <option value="2">신체검사1</option>
+                                    <option value="all">종합건강검진</option>
+                                </select>
+                            </div>
+                            <div class="selectMenu">
+                                <label for="pet-select">부위</label>
+                                <select>
+                                    <option value="ear">귀</option>
+                                    <option value="skin">피부</option>
+                                    <option value="mouth">입</option>
+                                </select>
+                            </div>
+                            <div class="selectMenu">
+                                <label for="pet-select">검사항목</label>
+                                <input type="text" class="selectInput" value="이개(귓바퀴)좌측"/>
+                            </div>
+                        </div>
+                        <div class="rBox">
+                            <div class="selectMenu">
+                                <label for="pet-select">공개여부</label>
+                                <input type="radio" name="open"/><span class="radioVal">공개</span>
+                                <input type="radio" name="open"/><span class="radioVal">비공개</span>
+                            </div>
+                            <div class="selectMenu">
+                                <label for="pet-select">성별구분</label>
+                                <input type="radio" name="gender"/><span class="radioVal">무관</span>
+                                <input type="radio" name="gender"/><span class="radioVal">암컷</span>
+                                <input type="radio" name="gender"/><span class="radioVal">수컷</span>
+                                <input type="radio" name="gender"/><span class="radioVal">암컷(중성화)</span>
+                                <input type="radio" name="gender"/><span class="radioVal">수컷(중성화)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-
+                <div class="rBoxs">
+                    <div class="rBox">
+                        <p class="rSubTitle">
+                            결과 선택 입력방식
+                        </p>
+                        <div class="btnGroup">
+                            <button>버튼선택</button>
+                            <button>숫자입력</button>
+                            <button>사진만 게시</button>
+                        </div>
+                        <p class="subMenu">복수선택 여부</p>
+                        <div class="btnGroup">
+                            <button>복수 선택 가능</button>
+                            <button>복수 선택 불가능</button>
+                        </div>
+                    </div>
+                    <div class="rBox">
+                        <div class="underLine">
+                            <p class="rSubTitle">
+                                설정
+                            </p>
+                        </div>
+                        <div class="selectMenu">
+                            <label for="select">사진첨부</label>
+                            <input type="radio" name="photo"/><span class="radioVal">생성</span>
+                            <input type="radio" name="photo"/><span class="radioVal">생성 안함</span>
+                        </div>
+                        <div class="selectMenu">
+                            <label for="select">기타항목</label>
+                            <input type="radio" name="etc"/><span class="radioVal">사진</span>
+                            <input type="radio" name="etc"/><span class="radioVal">생성 안함</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rLargeBox">
+                    <p class="rSubTitle">
+                        결과 선택 항목 입력
+                    </p>
+                    <button>+ 추가</button>
+                    <table>
+                        <th>순서</th>
+                        <th>옵션명</th>
+                        <th>최소치</th>
+                        <th>최대치</th>
+                        <th>상태</th>
+                        <th>코멘트</th>
+                        <th></th>
+                        <tr>
+                            <td>1</td>
+                            <td>정상 (80 ~ 150mmhg)</td>
+                            <td>37.9</td>
+                            <td>150</td>
+                            <td><button>정상</button></td>
+                            <td><input type="text"></td>
+                            <td><button>삭제</button></td>
+                        </tr>
+                    </table>
+                    <button>저장하기</button>
                 </div>
             </article>
-    </section>
+        </section>
     </div>
 </body>
 </html>
