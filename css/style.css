@@ -194,12 +194,12 @@
     padding: 1.2rem;
 }
 
-.tRow input{
+.tRow textarea {
+    color: #c5c5c5;
     border: 1px solid #c5c5c5;
     border-radius: 5px;
     padding: 0.3rem;
-    width: 100%;
-    color: #c5c5c5;
+    resize: none;
 }
 
 .statusBtn {
