@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    background-color: #f3f4f3;
+    padding: 5rem 0;
+}
+
+.containers {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* 왼쪽 메뉴 탭 */
+.lContainer {
+    width: 25%;
+    background-color: #fff;
+}
+.underLine {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.lTitle {
+    font-weight: 600;
+    padding: 1.2rem;
+}
+
+.user_avatar {
+    width: 50px;
+    height: 50px;
+    margin: 2rem 1.2rem 0 1.2rem;
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.lMenu {
+    margin-bottom: 30rem;
+}
+
+.subTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #a9a9a9;
+    padding: 2rem 1.2rem 1rem 1.2rem
+}
+
+.subMenu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1.2rem;
+}
+
+/* 오른쪽 내용*/
+.rContainer {
+    width: 75%;
+    margin-left: 10rem;
+    background-color: #fff;
+}
