@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>펫트너</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('input[type="checkbox"][name="button"]').click(function(){
+        if($(this).prop('checked')){
+            $('input[type="checkbox"][name="button]').prop('checked',false);
+            $(this).prop('checked',true);
+            console.log($(this).prop('checked',true))
+        }
+    });
+    //   $("input[type=checkbox]").on( "click",function(e){
+    //     if($(this).prop('checked')){
+            
+    //     $('input[type="checkbox"]').prop('checked',false);
+    //     $('.labelName-'+e.target.value).css({'color':'#000', 'border': '1px solid #000'});
+    //     $(this).prop('checked',true);
+    //     $('.labelName-'+e.target.value).css({'color':'#13c4fb', 'border': '1px solid #13c4fb'});
+    //     }
+    //     });     
+    });
+  </script> -->
 </head>
 <body>
     <div class="all">
@@ -92,14 +113,22 @@
                             결과 선택 입력방식
                         </p>
                         <div class="btnGroup">
-                            <button id="btn1">버튼선택</button>
-                            <button id="btn2">숫자입력</button>
-                            <button id="btn3">사진만 게시</button>
+                            <input type="radio" name="button" id="1" class="btnRadio">
+                            <label class="labelName" for="1">버튼선택</label>
+
+                            <input type="radio" name="button" id="2" class="btnRadio">
+                            <label class="labelName" for="2">숫자입력</label>
+
+                            <input type="radio" name="button" id="3" class="btnRadio">
+                            <label class="labelName" for="3">숫자입력</label>
                         </div>
                         <p class="subMenu">복수선택 여부</p>
                         <div class="btnGroup">
-                            <button id="btn1">복수 선택 가능</button>
-                            <button id="btn2">복수 선택 불가능</button>
+                            <input type="radio" name="button1" id="4" class="btnRadio">
+                            <label class="labelName" for="4">복수 선택 가능</label>
+
+                            <input type="radio" name="button1" id="5" class="btnRadio">
+                            <label class="labelName" for="5">복수 선택 불가능</label>
                         </div>
                     </div>
                     <div class="rBox">

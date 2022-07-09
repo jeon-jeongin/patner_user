@@ -145,27 +145,27 @@
     text-align: center;
 }
 
-#btn1 {
-    margin-right: -3px;
-    border: 1px solid #dcdcdc;
-    background-color: inherit;
-    padding: 0.5rem 1rem;
+.btnRadio {
+    display: none;
+    margin: 10px;
 }
 
-#btn2 {
-    margin-left: -3px;
+.labelName {
+    font-size: 12px;
+    display: inline-block;
+    margin: -2px;
+    padding: 0.5rem 0.7rem;
     border: 1px solid #dcdcdc;
     background-color: inherit;
-    padding: 0.5rem 1rem;
+    width: 110px;
+    text-align: center;
 }
 
-#btn3 {
-    margin-left: -5px;
-    border: 1px solid #dcdcdc;
-    background-color: inherit;
-    padding: 0.5rem 1rem;
+input:checked + label {
+    border: 1px solid #13c4fb;
+    color: #13c4fb;
 }
-
+  
 /* 결과 선택 항목 입력 */
 .addBtn {
     color: #13c4fb;
